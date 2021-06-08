@@ -20,7 +20,7 @@ def home():
 def scraper():
 
 # listings = mongo.db.listings
-# scraped_data = scrape_mars.scrape()    
+    scraped_data = scrape_mars.scrape()    
 # like listings_data = scrape_phone.scrape()
 #     listings.update({}, listings_data, upsert=True)
     return redirect("/", code=302)
