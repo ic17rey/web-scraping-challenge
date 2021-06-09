@@ -10,7 +10,7 @@ mongo = PyMongo(app, uri="mongodb://localhost:27017/mars_app")
 
 @app.route("/")
 def home():
-    destination_data = mongo.db.collectionvariables_dict.find_one()
+    destination_data = mongo.db.collection.find_one()
     
     # Return template and data
     return render_template("index.html", mars=destination_data ) 

@@ -17,43 +17,75 @@
     <title>Template</title>
 </head>
 <body>
-    <div class="container">
-        <!-- Create a jumbotron for the page heading and scrape button -->
-        <div class="jumbotron text-center">
-          <h1>Mission to Mars</h1>
-          <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Mars Data</a></p>
-        </div>
+  <div class="container">
+    <!-- Create a jumbotron for the page heading and scrape button -->
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Mars Data</a></p>
+    </div>
 
-        <!-- News display -->
-        <div class="row">
-          <div class="col-md-12">
-            <h3>Latest Mars News</h3>
-            <h3>{{ mars.news_title }}</h3>
-            <h3>{{ mars.news_p }}</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-7">
-            <h3>Featured Mars Image</h3>
-            <img src="{{ featured_image_url }}" alt="Mars Featured Image">
-           
-            
-          </div>
-          <div class="col-md-4">
-            <p>table here <br>
-            
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h3>Mars Hemispheres</h3>
-
-            
-          </div>
-        </div>
-    
-        
+    <!-- News display -->
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Latest Mars News</h3>
+        <h3>{{ mars.news_title }}</h3>
+        <h3>{{ mars.news_p }}</h3>
       </div>
+    </div>
+    
+    <!-- Mars Featured Image display -->
+    <div class="row">
+      <div class="col-md-7">
+        <h3>Featured Mars Image</h3>
+        <img src="{{ featured_image_url }}" alt="Mars Featured Image">
+      </div>
+
+    <!-- Mars Facts Table display -->    
+      </div>
+        <div class="col-md-4">
+          {{ mars_facts }}
+        </div>
+      </div>
+    </div>
+
+    <!-- Mars Hemispheres Images display in cards -->
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3>Mars Hemispheres</h3>
+        <div class="row"></div>
+          <div class=col-md-3>
+            <div class="card" style="width: 18rem;">
+              <img src="{{ mars.hemispheres_image_urls }}" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">{{ mars.hemispheres_image_urls }}</h5>
+              </div>
+            </div>
+          </div>
+          <div class=col-md-3>
+            <div class="card" style="width: 18rem;">
+              <img src="{{ mars.hemispheres_image_urls }}" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">{{ mars.hemispheres_image_urls }}</h5>
+              </div>
+            </div>
+          </div> 
+          <div class=col-md-3>
+            <div class="card" style="width: 18rem;">
+              <img src="{{ mars.hemispheres_image_urls }}" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">{{ mars.hemispheres_image_urls }}</h5>
+              </div>
+            </div>
+          </div><div class=col-md-3>
+            <div class="card" style="width: 18rem;">
+              <img src="{{ mars.hemispheres_image_urls }}" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">{{ mars.hemispheres_image_urls }}</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
 
 
     <!-- JavaScript Bundle -->
