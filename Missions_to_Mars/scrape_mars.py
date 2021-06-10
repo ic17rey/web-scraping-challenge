@@ -21,8 +21,8 @@ def scrape():
     featured_image_url = browser.find_by_css('img.fancybox-image')['src']
 
     # Identify the website url to be visited for facts and use pd.read_html to grab the html
-    mars_facts = pd.read_html('https://galaxyfacts-mars.com/')[0].to_html()
-
+    mars_facts = pd.read_html('https://galaxyfacts-mars.com/', header=0, index_col=0)[0].reset_index().to_html(classes='table table-striped', index=False)
+    
     # Identify the website url to be visited for the hemispheres and create a list for the four urls
     # Identify the website url to be visited
     browser.visit('https://marshemispheres.com/')
