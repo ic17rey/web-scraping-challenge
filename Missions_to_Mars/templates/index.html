@@ -28,8 +28,9 @@
     <div class="row">
       <div class="col-md-12">
         <h3>Latest Mars News</h3>
-        <h3>{{ mars.news_title }}</h3>
-        <h3>{{ mars.news_p }}</h3>
+        <hr>  
+        <h4>{{ mars.news }}</h4>
+        <p>{{ mars.paragraph }}</p>
       </div>
     </div>
     
@@ -37,13 +38,13 @@
     <div class="row">
       <div class="col-md-7">
         <h3>Featured Mars Image</h3>
-        <img src="{{ featured_image_url }}" alt="Mars Featured Image">
+        <img src="{{ mars.featured }}" alt="Mars Featured Image">
       </div>
 
     <!-- Mars Facts Table display -->    
       </div>
         <div class="col-md-4">
-          {{ mars_facts }}
+          {{ mars.facts }}
         </div>
       </div>
     </div>
@@ -55,7 +56,7 @@
         <div class="row"></div>
           <div class=col-md-3>
             <div class="card" style="width: 18rem;">
-              <img src="{{ mars.hemispheres_image_urls }}" class="card-img-top" alt="">
+              <img src="{{ mars.hemispheres }}" class="card-img-top" alt="">
               <div class="card-body">
                 <h5 class="card-title">{{ mars.hemispheres_image_urls }}</h5>
               </div>
@@ -63,7 +64,7 @@
           </div>
           <div class=col-md-3>
             <div class="card" style="width: 18rem;">
-              <img src="{{ mars.hemispheres_image_urls }}" class="card-img-top" alt="">
+              <img src="{{ mars.hemispheres }}" class="card-img-top" alt="">
               <div class="card-body">
                 <h5 class="card-title">{{ mars.hemispheres_image_urls }}</h5>
               </div>
@@ -71,14 +72,14 @@
           </div> 
           <div class=col-md-3>
             <div class="card" style="width: 18rem;">
-              <img src="{{ mars.hemispheres_image_urls }}" class="card-img-top" alt="">
+              <img src="{{ mars.hemispheres }}" class="card-img-top" alt="">
               <div class="card-body">
                 <h5 class="card-title">{{ mars.hemispheres_image_urls }}</h5>
               </div>
             </div>
           </div><div class=col-md-3>
             <div class="card" style="width: 18rem;">
-              <img src="{{ mars.hemispheres_image_urls }}" class="card-img-top" alt="">
+              <img src="{{ mars.hemispheres }}" class="card-img-top" alt="">
               <div class="card-body">
                 <h5 class="card-title">{{ mars.hemispheres_image_urls }}</h5>
               </div>
