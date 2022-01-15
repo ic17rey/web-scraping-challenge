@@ -1,6 +1,6 @@
 # Web Scraping Challenge - Mission to Mars
 
-This challenge requires taht a web application be built for scraping data related to the Mission to Mars. The data and images will be displayed in a single HTML page.
+This challenge requires that a web application be built for scraping data related to the Mission to Mars. The data and images will be displayed in a single HTML page.
 
 ### Project setup
 
