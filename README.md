@@ -33,3 +33,8 @@ MongoDB with Flask templating is used to create a new HTML page that displays al
     * The Project Title and the scrape button are displayed as jumbotron, top center of the page
     * The other info and images collected are displayed beneath the Title and scrape button
     * Screenshots of final application are included on GitHub along with the Jupyter Notebook
+
+* Screenshot of recent web scraping results
+<img width="335" alt="image" src="https://user-images.githubusercontent.com/78495351/149627325-8a6d58e9-aeab-4c06-a06c-dacfa614179e.png">
+
+
